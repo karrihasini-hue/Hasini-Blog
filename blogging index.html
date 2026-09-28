@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>My Blog</h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#blogs">Blogs</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h2>Welcome to My Blog</h2>
+        <p>Read, write and share your ideas with the world.</p>
+    </section>
+
+    <section id="blogs">
+        <h2 class="title">Latest Blogs</h2>
+
+        <input type="text" id="search" placeholder="Search blogs...">
+
+        <div class="blog-container" id="blogContainer">
+
+            <div class="blog-card">
+                <h3>My First Blog</h3>
+                <p>
+                    This is my first blog post. Blogging is a great way
+                    to share knowledge and experiences.
+                </p>
+                <button onclick="readMore()">Read More</button>
+            </div>
+
+            <div class="blog-card">
+                <h3>Technology</h3>
+                <p>
+                    Technology is changing the world. New technologies
+                    make our daily life easier and smarter.
+                </p>
+                <button onclick="readMore()">Read More</button>
+            </div>
+
+            <div class="blog-card">
+                <h3>Travel</h3>
+                <p>
+                    Travelling gives us an opportunity to explore new
+                    places, cultures and beautiful memories.
+                </p>
+                <button onclick="readMore()">Read More</button>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="add-blog">
+        <h2>Add a New Blog</h2>
+
+        <input type="text" id="blogTitle" placeholder="Blog Title">
+        <textarea id="blogContent" placeholder="Write your blog..."></textarea>
+
+        <button onclick="addBlog()">Add Blog</button>
+    </section>
+
+    <section id="about" class="info">
+        <h2>About</h2>
+        <p>This is a simple blogging website created using HTML, CSS and JavaScript.</p>
+    </section>
+
+    <footer id="contact">
+        <p>© 2026 My Blog | All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
